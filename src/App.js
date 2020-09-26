@@ -50,7 +50,7 @@ class App extends React.Component {
   render() {
     return (
       <Layout>
-        <h1>Word Wrap <span roll="img">🌮</span></h1>
+        <h1>Word Wrap <span roll="img" aria-label="emoji of a taco">🌮</span></h1>
         <form onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="inputWord">Please input a word:</label>
           <input name="inputWord" onChange={this.setInputWord.bind(this)}></input>
